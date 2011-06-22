@@ -1,8 +1,8 @@
 require 'rod'
-require 'rlp'
-require 'colors'
+require 'rlp/grammar'
 require 'unicode_utils/downcase'
 require 'unicode_utils/upcase'
+require 'colors'
 
 require 'rlp/corpus/corpus'
 require 'rlp/corpus/model'

@@ -1,0 +1,5 @@
+.*.sw?
+work
+.bundle
+Gemfile.lock
+data

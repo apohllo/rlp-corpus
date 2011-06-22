@@ -7,7 +7,7 @@ module Rlp
       field :position, :integer
       field :letter_case, :string
 
-      has_one :form, :class_name => "Rlp::WordForm", :index => :segmented
+      has_one :form, :class_name => "Rlp::Grammar::WordForm", :index => :segmented
       has_one :previous, :class_name => "Rlp::Corpus::Segment"
       has_one :next, :class_name => "Rlp::Corpus::Segment"
       has_one :sentence
