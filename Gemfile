@@ -1,0 +1,10 @@
+source "http://www.rubygems.org"
+#gem 'rod', :git => 'file:///home/fox/src/nlp/wsd/rod/.git', :branch => 'v0.6.x'
+gem 'rod', '0.6.2'
+gem 'srx-polish'
+gem 'colors'
+#gem 'rlp-grammar', :git => 'file:///home/fox/src/nlp/wsd/rlp-grammar/.git'
+gem 'rlp-grammar', :git => 'git://github.com/apohllo/rlp-grammar.git'
+#gem 'ruby-debug19'
+#gem 'ruby-debug-base19'
+#gem 'rlp-stat', :git => 'file:///home/fox/src/nlp/wsd/rlp-stat/.git'
