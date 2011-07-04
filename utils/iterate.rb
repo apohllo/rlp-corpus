@@ -5,11 +5,11 @@ require 'srx/polish/sentence'
 require 'benchmark'
 require 'rlp/grammar'
 require 'rlp/corpus'
-require 'ruby-debug'
+#require 'ruby-debug'
 
 
-Rlp::Corpus::Corpus.instance.create_database("data/pap2")
-Rlp::Grammar::Client.instance.open_database("data/rlp2",:readonly => false)
+Rlp::Corpus::Corpus.instance.create_database("data/pap")
+Rlp::Grammar::Client.instance.open_database("data/rlp",:readonly => false)
 
 #Benchmark.bm do |bm|
 #  bm.report do
@@ -31,11 +31,11 @@ puts SPLIT_RE
 forms = {}
 
 
-files = Dir.glob("work/inutf/0000*")
+files = Dir.glob("work/inutf/0*")
 puts "Total: #{files.size}"
 files.each.with_index do |file_name,index|
   print "#{index}. "
-  puts if index % 10 == 0
+  puts if index % 20 == 0
   document = Rlp::Corpus::Document.new(
     :title => file_name[file_name.rindex("/")+1..-1],
     :source => source, :position => index)

@@ -1,7 +1,5 @@
 require 'rod'
 require 'rlp/grammar'
-require 'unicode_utils/downcase'
-require 'unicode_utils/upcase'
 require 'colors'
 
 require 'rlp/corpus/corpus'

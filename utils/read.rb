@@ -4,8 +4,8 @@ require 'rlp/grammar'
 
 include Rlp::Corpus
 
-Corpus.instance.open_database("data/pap2")
-Rlp::Grammar::Client.instance.open_database("data/rlp2")
+Corpus.instance.open_database("data/pap")
+Rlp::Grammar::Client.instance.open_database("data/rlp")
 
 forms = {}
 counts = Hash.new(0)
